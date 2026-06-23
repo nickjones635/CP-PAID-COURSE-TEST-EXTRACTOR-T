@@ -120,7 +120,7 @@ async def message_handler(client: Client, message: Message):
         await message.reply(
             "Send credentials in this format:\n\n"
             "`username password`",
-            parse_mode="markdown",
+            parse_mode=None,
         )
         return
 
